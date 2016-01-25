@@ -22,8 +22,8 @@ int main(int argc, char** argv)
 
     if(!source.data)    //Check for data
     {
-        cout << "No image found!!" << endl;
-        return 0;
+        cout << "Image not found!!" << endl;
+        return -1;
     }
 
     namedWindow(window_name, CV_WINDOW_AUTOSIZE);    //Creating window
